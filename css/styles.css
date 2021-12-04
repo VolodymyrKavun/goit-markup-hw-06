@@ -265,7 +265,7 @@ img {
   overflow: hidden;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   clip-path: inset(50%);
   margin: -1px;
 }
@@ -704,7 +704,7 @@ color: var(--color-btn);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: scale(0.9) translate(-50%, -50%) rotate(0);
+  transform: translate(-50%, -50%) rotate(0);
 
   transition: transform 250ms var(--timing-function);
 }
@@ -811,6 +811,10 @@ margin-bottom: 30px;
   transition: fill 250ms var(--timing-function);
 }
 
+.check{
+  margin-bottom: 30px;
+}
+
 .modal-check-item{
   width: 16px;
   height: 15px;
@@ -822,6 +826,10 @@ margin-bottom: 30px;
   justify-content: center;
 }
 
+.modal-check:focus + .check-text .modal-check-item{
+  border-color: var(--btn-text-color);
+}
+
 .check-text{
   font-weight: 400;
   font-size: 14px;
@@ -831,7 +839,7 @@ margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+
 }
 
 .modal-check-link{
